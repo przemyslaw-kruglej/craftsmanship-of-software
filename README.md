@@ -1,2 +1,2 @@
 # Craftsmanship of Software Development
-<p>Testing layout</p>
+<p class="textImportant">Testing layout</p>
