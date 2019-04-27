@@ -11,3 +11,26 @@
 .textImportant {
   color: blue;
 }
+
+.main-content p {
+  text-align: justify;
+  color: #293033;
+}
+
+.main-content blockquote {
+  margin-top: 2em;
+  margin-right: 0;
+  font-style: italic;
+  margin-bottom: 1em;
+  font-size: 150%;
+}
+
+.main-content blockquote p {
+  text-align: right;
+}
+
+.main-content p.quoteSource {
+  font-style: italic;
+  text-align: right;
+  margin-bottom: 2em;
+}

@@ -4,7 +4,7 @@ At some point I've started thinking about programming as a *craft*. Extremely ha
 
 > Craftsman – a person who is skilled, especially someone who makes things by hand
 
-> [source: Cambridge Dictionary - Meaning of Craftsman](https://dictionary.cambridge.org/us/dictionary/english/craftsman#dataset-cbed "Cambridge Dictionary - Meaning of Craftsman")
+<p class="quoteSource"><a href="https://dictionary.cambridge.org/us/dictionary/english/craftsman#dataset-cbed">source: Cambridge Dictionary</a></p>
 
 I really like the sound of that. Aren't software developers the craftsmen of the 21<sup>st</sup> century?
 
