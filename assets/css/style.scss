@@ -8,6 +8,12 @@
   background-image: linear-gradient(120deg, #13262b, #18a2a5);
 }
 
+@media screen and (min-width: 64em) {
+  .page-header {
+    padding-bottom: 3.5rem;
+  }
+}
+
 .textImportant {
   color: #0d6d9c;
 }
@@ -29,9 +35,24 @@
   font-size: 1.8em;
 }
 
+@media screen and (max-width: 42em) {
+  .main-content h2 {
+    font-size: 2em;
+  }
+
+  .main-content h3 {
+    font-size: 1.4em;
+  }
+}
+
 .main-content p {
   text-align: justify;
   color: #293033;
+}
+
+.main-content a {
+  color: #046d39;
+  font-style: italic;
 }
 
 .main-content blockquote {
