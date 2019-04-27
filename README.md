@@ -34,7 +34,7 @@ All ideas presented here are just my thoughts. I'm basing them on experience gai
   * [Element 13 – If Things Go Wrong, Admit It](#element13IfThingsGoWrongAdmitIt)
   * [Element 14 – Put Effort in Code Reviews](#element14PutEffortInCodeReviews)
   * [Element 15 – Document Your Work and Provide Helping Information for Testers](#element15DocumentYourWorkAndProvideHelpingInformationForTesters)
-  * [Element 16 – Comply with Project's Code Style Guide](#element16ComplyWithProjectsCod StyleGuide)
+  * [Element 16 – Comply with Project's Code Style Guide](#element16ComplyWithProjectsCodeStyleGuide)
   * [Element 17 – Read What You Wrote Before Hitting "Send"](#element17ReadWhatYouWroteBeforeHittingSend)
 * [Elements of Version Control](#elementsOfVersionControl)
   * [Element 18 – Care for the Code Repository](#element18CareForTheCodeRepository)
@@ -48,7 +48,7 @@ This group of elements relates to the quality of software developer's work.
 
 ### <a name="element1HaveYourCodeReviewed"></a>Element 1 – Have Your Code Reviewed
 
-How many times have you seen code that wasn't complying with your project's style guide ([Element 16 – Comply with Project's Code Style Guide](#element16ComplyWithProjectsStyleGuide)), didn't conform with the best practices, had bugs in plain sight, and just wasn't well written? All of those could have been spotted and fixed during a code review. So, why weren't they? The problem here is threefold.
+How many times have you seen code that wasn't complying with your project's style guide ([Element 16 – Comply with Project's Code Style Guide](#element16ComplyWithProjectsCodeStyleGuide)), didn't conform with the best practices, had bugs in plain sight, and just wasn't well written? All of those could have been spotted and fixed during a code review. So, why weren't they? The problem here is threefold.
 
 Firstly, people fear criticism, and that's what often code review ends up being. On the other hand, well-done code review ([Element 14 – Put Effort in Code Reviews](#element14PutEffortInCodeReviews)) facilitates better code quality and lowers number of bugs, and in my opinion quality should be our driving force ([Element 2 – Make Quality Your Driving Force](#element2MakeQualityYourDrivingForce)).
 
@@ -319,7 +319,7 @@ In the end, you want your teammate-tester to <span class="textImportant">assure 
 
 <p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
 
-### <a name="element16ComplyWithProjectsCod"></a>Element 16 – Comply with Project's Code Style Guide
+### <a name="element16ComplyWithProjectsCodeStyleGuide"></a>Element 16 – Comply with Project's Code Style Guide
  
 Spaces or tabs? I bet you heard that one before. Every developer has a coding style of his or her own. You can write and format your source code in so many ways, and there are different convention you can use. Most of the time, you work with other developers on the project. It is unlikely that everyone will comply with the same conventions and formatting style.
 
