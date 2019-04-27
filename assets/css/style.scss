@@ -15,7 +15,8 @@
 }
 
 .textImportant {
-  color: #0d6d9c;
+  color: #007e9c;
+  font-weight: bold;
 }
 
 .main-content h1 {
@@ -45,13 +46,17 @@
   }
 }
 
-.main-content p {
+.main-content p, .main-content li {
   text-align: justify;
   color: #293033;
 }
 
+.listWithMargin li {
+  margin-bottom: 1em;
+}
+
 .main-content a {
-  color: #046d39;
+  color: #1e868b;
   font-style: italic;
 }
 

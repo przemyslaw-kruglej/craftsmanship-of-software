@@ -18,9 +18,29 @@ All ideas presented here are just my thoughts. I'm basing them on experience gai
 
 * [Elements of Quality](#elementsOfQuality)
   * [Element 1 – Have Your Code Reviewed](#element1HaveYourCodeReviewed)
-  * Element 2 – Make Quality Your Driving Force
-  * Element 3 – Care About Small Things
-  * Element 4 – Be Reliable
+  * [Element 2 – Make Quality Your Driving Force](#element2MakeQualityYourDrivingForce)
+  * [Element 3 – Care About Small Things](#element3CareAboutSmallThings)
+  * [Element 4 – Be Reliable](#element4BeReliable)
+* [Elements of Versatility](#elementsOfVersatility)
+  * [Element 5 – Search for Answers](#element5SearchForAnswers)
+  * [Element 6 – Acknowledge Testing as a Part of Your Job](#element6AcknowledgeTestingAsPartOfYourJob)
+  * [Element 7 – Look at the Bigger Picture](#element7LookAtTheBiggerPicture)
+  * [Element 8 – Embrace the Challenge of Other Technologies](#element8EmbraceTheChallengeOfOtherTechnologies)
+* [Elements of Teamwork](#elementsOfTeamwork)
+  * [Element 9 – Think About Developers Who Will Maintain Your Code](#element9ThinkAboutDevelopersWhoWillMaintainYourCode)
+  * [Element 10 – Value Time of Other People by Asking the Question the Right Way](#element10ValueTimeOfOtherPeopleByAskingTheQuestionTheRightWay)
+  * [Element 11 – Be Helpful](#element11BeHelpful)
+  * [Element 12 – Don't Blame – Solve Problems](#element12DontBlameSolveProblems)
+  * [Element 13 – If Things Go Wrong, Admit It](#element13IfThingsGoWrongAdmitIt)
+  * [Element 14 – Put Effort in Code Reviews](#element14PutEffortInCodeReviews)
+  * [Element 15 – Document Your Work and Provide Helping Information for Testers](#element15DocumentYourWorkAndProvideHelpingInformationForTesters)
+  * [Element 16 – Comply with Project's Code Style Guide](#element16ComplyWithProjectsCod StyleGuide)
+  * [Element 17 – Read What You Wrote Before Hitting "Send"](#element17ReadWhatYouWroteBeforeHittingSend)
+* [Elements of Version Control](#elementsOfVersionControl)
+  * [Element 18 – Care for the Code Repository](#element18CareForTheCodeRepository)
+  * [Element 19 – Master Your Version Control System](#element19MasterYourVersionControlSystem)
+  * [Element 20 – Write Descriptive Commit Messages](#element20WriteDescriptiveCommitMessages)
+  * [Element 21 – Break Changes Into Commits](#element21BreakChangesIntoCommits)
 
 ## <a name="elementsOfQuality"></a>Elements of Quality
 
@@ -30,7 +50,7 @@ This group of elements relates to the quality of software developer's work.
 
 How many times have you seen code that wasn't complying with your project's style guide ([Element 16 – Comply with Project's Code Style Guide](#element16ComplyWithProjectsStyleGuide)), didn't conform with the best practices, had bugs in plain sight, and just wasn't well written? All of those could have been spotted and fixed during a code review. So, why weren't they? The problem here is threefold.
 
-Firstly, people fear criticism, and that's what often code review ends up being. On the other hand, well-done code review (Element 14 – Put Effort in Code Reviews) facilitates better code quality and lowers number of bugs, and in my opinion quality should be our driving force (Element 2 – Make Quality Your Driving Force).
+Firstly, people fear criticism, and that's what often code review ends up being. On the other hand, well-done code review ([Element 14 – Put Effort in Code Reviews](#element14PutEffortInCodeReviews)) facilitates better code quality and lowers number of bugs, and in my opinion quality should be our driving force ([Element 2 – Make Quality Your Driving Force](#element2MakeQualityYourDrivingForce)).
 
 <span class="textImportant">If this is the case for you, don't be afraid of code reviews. Find people on your project that you know will provide constructive feedback and that will make effort to help you improve your code.</span>
 
@@ -43,5 +63,29 @@ Lastly, some developers are just not used to code reviews, and often don't reali
 <span class="textImportant">Make it a habit of having your code reviewed. It does pay off, and increases quality of the code you create.</span>
 
 To summarize, code review is a great tool that can help you increase quality of your code and minimize number of bugs in your code. <span class="textImportant">You just need to give your teammates a chance to do it.</span>
+
+<p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
+
+### <a name="element2MakeQualityYourDrivingForce"></a>Element 2 – Make Quality Your Driving Force
+
+When you start working on a task, what do you picture as the end result? Is it just a trio of: a commit, deployment, and time spent logged in an issue tracker?
+
+Let me propose a different approach, where you care about the value of the delivered piece of software from the very beginning, and all you do, you do with one thing in mind.
+
+Quality.
+
+This might sound simply, but it takes time to get into the habit of this approach, which I call *Quality-Driven Development*.
+
+Whenever you start working on a task, keep in mind that your approach is quality-driven. <span class="textImportant">Your goal is to end up with a piece of software that you will be proud of.</span> **Remember that your name will be next to the commits which introduce changes in the project.** And that alone, in my opinion, is a very powerful notion, worth stopping for a moment and thinking about. Consider that from the moment when you push your changes, everyone will be able to see them, and <span class="textImportant">though you can't judge a book by its cover, the same cannot be said about source code and its author</span>.
+
+Therefore, **make quality your driving force**. <span class="textImportant">Whenever you deliver something, ask yourself these simple questions:</span>
+
+<ul class="listWithMargin">
+  <li><em>"Is this the best I could have done?"</em> – Can you say that this piece of code couldn't have been done better, taking your skills and knowledge into consideration?</li>
+  <li><em>"Have I left nothing behind?"</em> – Are all of the cases, that you have thought of, taken into account?</li>
+  <li><em>"Could I have asked somebody to help me improve my code?"</em> – If you know there is somebody on your project that could help you improve your code, have you asked for their expertise?</li>
+</ul>
+
+Many of the other Elements in this document emphasise directly, or indirectly, *Quality-Driven Development*, and propose ways to support it, like [Element 3 – Care About Small Things](#element3CareAboutSmallThings) or [Element 9 – Think About Developers Who Will Maintain Your Code](#element9ThinkAboutDevelopersWhoWillMaintainYourCode).
 
 <p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
