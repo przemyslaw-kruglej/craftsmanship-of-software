@@ -89,3 +89,51 @@ Therefore, **make quality your driving force**. <span class="textImportant">When
 Many of the other Elements in this document emphasise directly, or indirectly, *Quality-Driven Development*, and propose ways to support it, like [Element 3 – Care About Small Things](#element3CareAboutSmallThings) or [Element 9 – Think About Developers Who Will Maintain Your Code](#element9ThinkAboutDevelopersWhoWillMaintainYourCode).
 
 <p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
+
+### <a name="element3CareAboutSmallThings"></a>Element 3 – Care About Small Things
+
+Sometime you encounter a task (perhaps even yours) and you notice that it could have been done better.
+
+<ul class="listWithMargin">
+  <li>Maybe the author hasn't paid enough attention to the code formatting, or the code violates some of the best-practices used on the project, or the code has been written in a way that is hard to understand.</li>
+  <li>It might be that the tests haven't been written or updated, or no attention was paid to what happened to the task after it has been merged (and something went wrong), or the commit message isn't descriptive.</li>
+  <li>Perhaps some of the business cases were neglected by the developer, because he either thought they were close-to-nonexistent, or because they were not included in the business specification, and the developer didn't think about mentioning them to the business users.</li>
+  <li>Maybe the related documentation hasn't been updated after the task had been done, or information that would help testers perform the test of the task hasn't been supplied.</li>
+</ul>
+
+The points listed above (and other, as the list could go on and on) would be regarded differently by each developer. Some would be negligible, whereas other would be requirements in the *definition of done*. Either way, they can all be viewed as details. And <span class="textImportant">details make all the difference.</span> **It is the small things that bring a developer's work to the next level.**
+
+<span class="textImportant">Don't leave anything behind. Whenever you feel like the task is ready, consider if there is anything that you can improve, or if there is any related action that you can do.</span>
+
+There is another important thing to mention here, and a separate *Element* is dedicated to it. <span class="textImportant">People notice detailed work and quality code, and, therefore, its author</span>, and it is a good feeling being regarded highly by your colleagues ([Element 4 – Be Reliable](#element4BeReliable)).
+
+So <span class="textImportant">pay attention to the details. They all add up to the quality of what you deliver.</span>
+
+One thing, however, that working on the details requires, is time. It is often a trade off between how much time you have and how strongly you feel about delivering top quality. Keep in mind that making your tasks *pixel-perfect* will often take significantly more time. It might not always be the right solution and you will have to adapt (adaptation is [the topic of the next set of Elements](#elementsOfVersatility)). Try finding a middle ground when needed.
+
+<p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
+
+### <a name="element4BeReliable"></a>Element 4 – Be Reliable
+
+When you join a new project, you often find out that there are some people that are said to *know everything* related to the project and/or are very strong from the technical point of view, and you can always ask them for an advice, learn from them, and expect their work to be of finest quality.
+
+You can be such a person. All it takes is the *Quality-Driven Development* approach, attention to details, technical expertise, and being helpful... Sounds like a lot, and it is. **You have to work for your reputation.** So, if you will care about your work, make quality your goal, and if you can act as a team player, you will become the 'guy (or girl) who can be counted upon'. It is a nice feeling to be respected and viewed this way, but it takes time, effort, and work.
+
+<span class="textImportant">Become a person that others can count on.</span> Build your reputation, and you will be rewarded for it.
+
+Also of importance, as mentioned above, is that not only quality of what you deliver matters here, but many aspects of teamwork as well, which is a topic covered in one of [the following sets of Elements](#elementsOfTeamwork).
+
+
+## <a name="elementsOfVersatility"></a>Elements of Versatility
+
+Versatility for software developers means adapting quickly and developing a range of skills to help them keep up with changes, as well as being able to put themselves in the bigger picture.
+
+### <a name="element5SearchForAnswers"></a>Element 5 – Search for Answers
+
+Often when you ask a teammate a question about a problem you are facing, they will just immediately type it into a search engine in their web browser. They don't know the answer, but they know where and how to look for it. A few seconds later they present to you a solution to your problem, taken from one of the first search results. You ask yourself: *why didn't I do that in the first place?*
+
+**Most of the questions have already been asked**, and you will quickly find them on the Internet, along with proposed solutions. If this is what you do already, that's great, if not – give it a try. You will almost always find the solution in the very first few search results. It's just a matter of wording the query for the search engine in the right way, and it is something that takes practice, so don't be discouraged if the first few tries do not yield any relevant results.
+
+You will often find what you are looking for on Stackoverflow, which has gained a lot of popularity in the last years. <span class="textImportant">If you find an answer on Stackoverflow, consider upvoting it to show its author that he has helped yet another fellow developer.</span>
+
+At times, finding answers in the vast Internet might be hard, and it might require time and commitment. Keep in mind that <span class="textImportant">searching for answers is a <em>skill to learn</em></span>, and a very important one. It is also rewarding – it will quicken your development process and make you less dependable on getting help from other developers. What is more, <span class="textImportant">it saves time – both yours and your teammate's</span>, whom you would ask the question. Of course, it doesn't mean that you shouldn't ask for help when you are stuck with a problem – [Element 10 – Value Time of Other People by Asking the Question the Right Way](element10ValueTimeOfOtherPeopleByAskingTheQuestionTheRightWay) proposes a way for you to *help other people help you*.
