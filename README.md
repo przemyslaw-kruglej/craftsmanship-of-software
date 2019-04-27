@@ -137,7 +137,7 @@ Often when you ask a teammate a question about a problem you are facing, they wi
 
 You will often find what you are looking for on Stackoverflow, which has gained a lot of popularity in the last years. <span class="textImportant">If you find an answer on Stackoverflow, consider upvoting it to show its author that he has helped yet another fellow developer.</span>
 
-At times, finding answers in the vast Internet might be hard, and it might require time and commitment. Keep in mind that <span class="textImportant">searching for answers is a <em>skill to learn</em></span>, and a very important one. It is also rewarding – it will quicken your development process and make you less dependable on getting help from other developers. What is more, <span class="textImportant">it saves time – both yours and your teammate's</span>, whom you would ask the question. Of course, it doesn't mean that you shouldn't ask for help when you are stuck with a problem – [Element 10 – Value Time of Other People by Asking the Question the Right Way](element10ValueTimeOfOtherPeopleByAskingTheQuestionTheRightWay) proposes a way for you to *help other people help you*.
+At times, finding answers in the vast Internet might be hard, and it might require time and commitment. Keep in mind that <span class="textImportant">searching for answers is a <em>skill to learn</em></span>, and a very important one. It is also rewarding – it will quicken your development process and make you less dependable on getting help from other developers. What is more, <span class="textImportant">it saves time – both yours and your teammate's</span>, whom you would ask the question. Of course, it doesn't mean that you shouldn't ask for help when you are stuck with a problem – [Element 10 – Value Time of Other People by Asking the Question the Right Way](#element10ValueTimeOfOtherPeopleByAskingTheQuestionTheRightWay) proposes a way for you to *help other people help you*.
 
 <p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
 
@@ -151,7 +151,7 @@ Whatever the reason, you might be asked to help in testing. I often hear develop
 
 Testing is rooted in the very concept of software development. If there is a chance to support the team by testing a couple of tasks in a time of need, why not do it? A little versatility goes a long way. Don't think about testing like something worse than writing the code, where <span class="textImportant">testing is in fact a part of the development process</span>.
 
-<span class="textImportant">Help your team by doing some testing in a time of need.</span> Nothing wrong about it, and <span class="textImportant">having to test some of the other developer's work might just reveal to you how hard testing can get</span>. You can easily make it simpler for the testers if you provide information about the task you have done, covered by [Element 15 – Document Your Work and Provide Helping Information for Testers](element15DocumentYourWorkAndProvideHelpingInformationForTesters).
+<span class="textImportant">Help your team by doing some testing in a time of need.</span> Nothing wrong about it, and <span class="textImportant">having to test some of the other developer's work might just reveal to you how hard testing can get</span>. You can easily make it simpler for the testers if you provide information about the task you have done, covered by [Element 15 – Document Your Work and Provide Helping Information for Testers](#element15DocumentYourWorkAndProvideHelpingInformationForTesters).
 
 <p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
 
@@ -178,5 +178,85 @@ I have worked with developers who were very unhappy when they were asked to do s
 Just to be clear, **by no means am I talking about leaving your favorite language and framework**, and starting working with other technologies that you have no interest in. What I mean is to be versatile enough to deal with tasks that might not be covered by your specialization, from time to time. If there are too many of them, then it is a good idea to talk to your manager about it.
 
 <span class="textImportant">When asked to do some programming in a different language, or using a different technology or framework, try to look at it as both: a challenge and a possibility to learn something new.</span> You might like it, and if not, it might be an addition on your curriculum vitae. Getting basics in other technologies might be a huge advantage on the market.
+
+<p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
+
+## <a name="elementsOfTeamwork"></a>Elements of Teamwork
+
+Elements in this chapter are about facilitating teamwork.
+
+### <a name="element9ThinkAboutDevelopersWhoWillMaintainYourCode"></a>Element 9 – Think About Developers Who Will Maintain Your Code
+
+Whenever you finish working on a piece of code and merge it to the main branch, it will be available for all other developers to see as long as the project will be maintained. **Your name will be next to your commits** and you can be sure that, <span class="textImportant">sooner or later, somebody will be looking at your code</span>. It would be beneficial if the code was clean and good as it speaks about your attitude, technical knowledge, and care for quality, as well as shows that you think about anyone who will be taking care of it in the future.
+
+Because of bugs or requirements changes, someone will have to read your code, try to understand it, and change or fix it. Probably it will be you. How many times have you tried to understand other developer's code, and wished they thought about any future person who would have to maintain it? How many times the author of the enigmatic code was you? 
+
+Taking time and caring to write a piece of code you will be proud of will save you a lot of time in the future, and, what is probably more important, even more time of your fellow teammates.
+
+It is a good habit of walking through your code once you are finished with it and trying to consider the following:
+<ul class="listWithMargin">
+  <li>Will I understand my code tomorrow, next week, in six months?</li>
+  <li>Will the code be understandable by someone else? </li>
+  <li>What questions might be asked about my code and what could I change to make the code  give those answers by itself?</li>
+</ul>
+Remember – <span class="textImportant">your code will be read and maintained by other people (and, probably, you too)</span>. Taking a few extra minutes to think about its clarity and understandability can save hours of future time of anybody who will be maintaining it. What is more, remember that <span class="textImportant">your code speaks about yourself</span>. Strive for quality and <span class="textImportant">put effort to deliver a piece of source code that you will be proud to have your name next to</span>.
+
+<p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
+
+### <a name="element10ValueTimeOfOtherPeopleByAskingTheQuestionTheRightWay"></a>Element 10 – Value Time of Other People by Asking the Question the Right Way
+
+We, as software developers, encounter lots of interesting problems in our daily work. From time to time we get stuck with a problem, and we look for answers on the Internet, since most of the questions have already been asked ([Element 5 – Search for Answers](#element5SearchForAnswers)). However, from time to time we seek help among our teammates.
+
+The questions I often hear are quick, without providing any context, and asked in an unstructured way, leaving the person being asked in a spot that makes it hard for them to provide help. This makes both people lose time, as the person who is being asked has to ask more questions to actually understand the problem.
+
+Whenever you want to ask a question, <span class="textImportant">it is a good thing to consider whether you would understand your own question and be able to help if someone else asked it</span>, taking into account that you only got as much information as you decided to provide in the question.
+
+Thinking upfront about what you want to ask saves time, because you put your problem in a structure of a question in such a way that will be understood by someone else. Problem understood is a problem more likely to be solved quickly.
+
+What is more, if you prepare your question, and the first person that you ask will not know the answer, you will be able to ask another person the same, already prepared, question.
+
+Lastly, there is the [Rubber Duck Debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging). If you have not heard about it, it is a way of trying to tackle a problem by talking to a "rubber duck" about it. You are supposed to tell the "duck" what your problem is and describe it in a simple way. It turns out that this way, when you are thinking about the problem in terms of explaining it to somebody else, our brains work in a different way, which very often leads to finding a solution by ourselves. It actually works pretty often, so preparing a question has a benefit of a chance of granting you the solution even before you go and ask the question in the first place.
+
+To sum up, <span class="textImportant">prepare your question before asking</span>. Provide all the necessary information in a concise way, structuring it, for example, in the following manner:
+<ul class="listWithMargin">
+  <li>Firstly, give a short and precise description of the problem in two to three sentences. Also mention what correct result you are expecting.</li>
+  <li>Secondly, if you have tried using a piece of code, enclose it, as it might be useful. If you have tried a few possible solutions and none of them worked, that is also an information worth sharing.</li>
+  <li>Next, if there were any errors, attach their codes and description – they always shed light on the problem.</li>
+  <li>Lastly, depending on the type of the problem, you may also give an instruction how to reproduce the error you have encountered.</li>
+</ul>
+
+This is of course only a general structure that can serve as a starting point. The point here is to <span class="textImportant">think about what you want ask, and how you can ask the question in such a way that will <em>help another person help you</em></span>.
+
+<p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
+
+### <a name="element11BeHelpful"></a>Element 11 – Be Helpful
+
+As you gain technical experience and new skills, and expand your knowledge about the project you are working on, you will probably be a person that will be often asked for help or advice. You might  prefer to just focus on your programming tasks, but remember: *a little kindness goes a long way*.
+
+Younger developers will look up to you and ask for your help, and other teammates will ask for your advice when stuck with a problem. Take such opportunities to teach, share your knowledge, and give advice to other people on the project. Teaching and knowledge-sharing is a good thing for the overall quality of the project you are working.
+
+Even when working with sombody with whom you are not on the same page most of the time, it is still better to have a professional relationship. Life on the project will just be easier.
+
+To be clear, **I do not mean to be always available to everyone, answer all questions and forfeit your daily tasks**. What I mean, as in [Element 4 – Be Reliable](#element4BeReliable), is <span class="textImportant">to be a person that is known to be helpful and passionate about passing their knowledge, and putting effort in supporting teammates</span>.
+
+<span class="textImportant">Be helpful.</span> Help your teammates, share your technical knowledge and project experience. <span class="textImportant">By helping others, you help the team deliver better software.</span>
+
+<p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
+
+### <a name="element12DontBlameSolveProblems"></a>Element 12 – Don't Blame – Solve Problems
+
+An inherent part of our job is making mistakes. Bugs happen, mistakes are being made, stuff is being overlooked. No one is infallible, no matter how accurate or experienced. When something bad happens, the key point, in my opinion, is not to seek a person to be blamed for their mistake. There is just no point in putting the blame on one of your teammates, and even less in attacking them publicly. A better option is to solve the problem at hand. Talk to your teammate and try to find a solution.
+
+From my experience, when there is a need to communicate to somebody that their mistake has caused some trouble, the best approach is to contact that person through a communicator that the team is using. <span class="textImportant">You can calmly talk about the problem that you have found and discuss a way to handle it.</span> People tend to get defensive when their mistake is pointet out, and this way it is easier for them to digest.
+
+This approach has an additional advantage. Again, talking from experience, sometimes it happens that you mistakenly think that a certain person have made an error. When this happens, and you want to talk about it (and I've been on both sides), it is best not to accuse them of anything in front of other teammates. It leaves a bad taste (no matter if it was their fault or not), and doesn't make it easier working on the project. If it wasn't their fault in the end, you can still talk it through – maybe you'll be pointed in the right direction to solve the problem.
+
+The message you could write, using your team's favorite communicator, could be something along these lines:
+
+    "Hey, I see in your commits from last Friday that you made some changes in files X and Y. I think it might have caused some trouble – following errors were found in production > logs: <...>. Could you take a look at it?".
+
+If the person isn't willing to cooperate to fix the problem (as they should per [Element 13 – If Things Go Wrong, Admit It](#element13IfThingsGoWrongAdmitIt)), then, at least, you have tried. Create a bug task in your team's issue tracker and inform your manager/team leader/product owner about it. Better yet, depending on the magnitude of the problem, if you have time and you know how, just try to fix it.
+
+When a problem occurs, <span class="textImportant">instead of blaming – look for solutions</span>. Communicate the problem in a discrete way, and lend a helping hand, if possible. Helping, not blaming.Helping, not blaming.
 
 <p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
