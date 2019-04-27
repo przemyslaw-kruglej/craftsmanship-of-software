@@ -123,6 +123,7 @@ You can be such a person. All it takes is the *Quality-Driven Development* appro
 
 Also of importance, as mentioned above, is that not only quality of what you deliver matters here, but many aspects of teamwork as well, which is a topic covered in one of [the following sets of Elements](#elementsOfTeamwork).
 
+<p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
 
 ## <a name="elementsOfVersatility"></a>Elements of Versatility
 
@@ -137,3 +138,45 @@ Often when you ask a teammate a question about a problem you are facing, they wi
 You will often find what you are looking for on Stackoverflow, which has gained a lot of popularity in the last years. <span class="textImportant">If you find an answer on Stackoverflow, consider upvoting it to show its author that he has helped yet another fellow developer.</span>
 
 At times, finding answers in the vast Internet might be hard, and it might require time and commitment. Keep in mind that <span class="textImportant">searching for answers is a <em>skill to learn</em></span>, and a very important one. It is also rewarding – it will quicken your development process and make you less dependable on getting help from other developers. What is more, <span class="textImportant">it saves time – both yours and your teammate's</span>, whom you would ask the question. Of course, it doesn't mean that you shouldn't ask for help when you are stuck with a problem – [Element 10 – Value Time of Other People by Asking the Question the Right Way](element10ValueTimeOfOtherPeopleByAskingTheQuestionTheRightWay) proposes a way for you to *help other people help you*.
+
+<p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
+
+### <a name="element6AcknowledgeTestingAsPartOfYourJob"></a>Element 6 – Acknowledge Testing as a Part of Your Job
+
+Testing is vital in our line of work, and often there are dedicated testers on projects. They take care of testing once we assign a task to them that is, in our opinion, ready to go.
+
+From time to time, though, tester from our team might be on holidays, get sick, or just have too many tasks on her or his plate to be able to finish all of the testing in time before the system goes live. It might also be a case that there just aren't any testers in your team.
+
+Whatever the reason, you might be asked to help in testing. I often hear developers answer that *testing is not part of their job*. They sound like they feel offended by the notion of having to do some testing, like it is somehow going to diminish them, whereas, in fact, **testing is a part of every developer's daily work**. Whenever we write some code and produce a functionality, we should test our solution before it goes further down the workflow. I myself can't imagine claiming the task is ready, having not tested it myself, and asking tester from my team to take care of it.
+
+Testing is rooted in the very concept of software development. If there is a chance to support the team by testing a couple of tasks in a time of need, why not do it? A little versatility goes a long way. Don't think about testing like something worse than writing the code, where <span class="textImportant">testing is in fact a part of the development process</span>.
+
+<span class="textImportant">Help your team by doing some testing in a time of need.</span> Nothing wrong about it, and <span class="textImportant">having to test some of the other developer's work might just reveal to you how hard testing can get</span>. You can easily make it simpler for the testers if you provide information about the task you have done, covered by [Element 15 – Document Your Work and Provide Helping Information for Testers](element15DocumentYourWorkAndProvideHelpingInformationForTesters).
+
+<p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
+
+### <a name="element7LookAtTheBiggerPicture"></a>Element 7 – Look at the Bigger Picture
+
+Imagine: a developer comes to work and there he is, with his tasks and problems to solve. He writes code all day and happily goes back home. That picture, for many of the developers I have worked with so far, would be a *dream job*. Unfortunately for them, it is not how the developer's work looks like most of the time.
+
+There are meetings, supporting colleagues, code reviews, work time tracking, more meetings, tedious bug fixing, tasks time-requirement evaluation, business' needs analysis, and so on. <span class="textImportant">Our line of work consists of much more than just writing the code, and we need to be aware of that.</span> The workflow of delivering value is complicated, and varies from project to project, and team to team. What is important here is **understanding that there is much more to software development than... software development.** <span class="textImportant">Next few times when you'll be doing some task that is not related to writing source code, think how your work contributes to the overall process of software creation in the company that you are a part of.</span>
+
+Two complaints that I hear from teammates very often are: logging work time and having to estimate time-cost of tasks. It can be tedious, but it is often necessary from your employer's point of view. He is, after all, paying you for what you do, and most probably there's a budget to consider, as well as requirements from stakeholders. Thus, knowing what the team has been working on and how much time it took is vital to the company. Same goes for the task estimation – knowing the cost of implementation of different business needs allows a better understanding of what can be delivered and when. Basing on that, your employer can choose, with the time-cost in mind, what is the most important and thus what should be the point of focus for the team.
+
+<span class="textImportant">Whenever you join a team, become a member that contributes to the team's effort of delivering value.</span> Take a look at the bigger picture, and understand the project's and team's workflow. Keep in mind that your work consists of many different tasks. Writing source code is an important one on that list, though not the only one.
+
+<p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
+
+### <a name="element8EmbraceTheChallengeOfOtherTechnologies"></a>Element 8 – Embrace the Challenge of Other Technologies
+
+Our world of software development evolves quickly, and many new trends, languages, frameworks, and technologies pop up every year. Each of us specializes in what she/he does and/or likes best, and we tend to stick to those same technologies for quite a long time. Sometimes we might be asked to do a task not related to our specialization. What should we do? Decline or happily try out something new?
+
+It depends on what we are asked to do, which technologies are involved, and how much time it will take, and, possibly, how often similar tasks will pop up in the future. We have to evaluate all of those and make a choice. However, <span class="textImportant">consider that learning other technologies might be beneficial, and developers who are able to work with a broader range of languages and frameworks are valuable to employers.</span>
+
+I have worked with developers who were very unhappy when they were asked to do something that was just outside their comfort zone. No one was asking them to totally abandon their language of choice, yet still they complained about doing something new to them. Instead of looking at it as a challenge and possibility to learn something new, they regarded it as a waste of time and something that was out of scope of their responsibilities.
+
+Just to be clear, **by no means am I talking about leaving your favorite language and framework**, and starting working with other technologies that you have no interest in. What I mean is to be versatile enough to deal with tasks that might not be covered by your specialization, from time to time. If there are too many of them, then it is a good idea to talk to your manager about it.
+
+<span class="textImportant">When asked to do some programming in a different language, or using a different technology or framework, try to look at it as both: a challenge and a possibility to learn something new.</span> You might like it, and if not, it might be an addition on your curriculum vitae. Getting basics in other technologies might be a huge advantage on the market.
+
+<p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
