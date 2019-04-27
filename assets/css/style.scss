@@ -5,11 +5,28 @@
 
 .page-header {
   background-image: #2e6669;
-  background-image: linear-gradient(120deg, #2c2c2d, #18a2a5);
+  background-image: linear-gradient(120deg, #13262b, #18a2a5);
 }
 
 .textImportant {
-  color: blue;
+  color: #0d6d9c;
+}
+
+.main-content h1 {
+  font-size: 1.8em;
+  color: #0b405a;
+}
+
+.main-content h2 {
+  text-align: right;
+  color: #0b405a;
+  font-size: 2.4em;
+  font-style: italic;
+}
+
+.main-content h3 {
+  color: #0b405a;
+  font-size: 1.8em;
 }
 
 .main-content p {
@@ -33,4 +50,9 @@
   font-style: italic;
   text-align: right;
   margin-bottom: 2em;
+}
+
+.main-content p.backToToC {
+  text-align: right;
+  font-size: 90%;
 }
