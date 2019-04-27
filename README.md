@@ -253,10 +253,106 @@ This approach has an additional advantage. Again, talking from experience, somet
 
 The message you could write, using your team's favorite communicator, could be something along these lines:
 
-    "Hey, I see in your commits from last Friday that you made some changes in files X and Y. I think it might have caused some trouble – following errors were found in production > logs: <...>. Could you take a look at it?".
+    "Hey, I see in your commits from last Friday
+    that you made some changes in files X and Y.
+    I think it might have caused some trouble.
+    Following errors were found in production logs: <...>.
+    Could you take a look at it?"
 
 If the person isn't willing to cooperate to fix the problem (as they should per [Element 13 – If Things Go Wrong, Admit It](#element13IfThingsGoWrongAdmitIt)), then, at least, you have tried. Create a bug task in your team's issue tracker and inform your manager/team leader/product owner about it. Better yet, depending on the magnitude of the problem, if you have time and you know how, just try to fix it.
 
-When a problem occurs, <span class="textImportant">instead of blaming – look for solutions</span>. Communicate the problem in a discrete way, and lend a helping hand, if possible. Helping, not blaming.Helping, not blaming.
+When a problem occurs, <span class="textImportant">instead of blaming – look for solutions</span>. Communicate the problem in a discrete way, and lend a helping hand, if possible. <span class="textImportant">Helping, not blaming.</span>
+
+<p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
+
+### <a name="element13IfThingsGoWrongAdmitIt"></a>Element 13 – If Things Go Wrong, Admit It
+
+As mentioned in the previous Element, mistakes happen. From time to time somebody will point it out to you that you have broke something. There are two very different ways to deal with this situation.
+
+You may either go in the direction of denial, explaining yourself, blaming another teammate, or, worst of all, telling the person who approached you to just fix it by themselves, wanting to have nothing to do with it. This is not the way to go.
+
+*The* way to go is to **take responsibility for your actions**. Something went wrong and it was possibly my fault? **Alright, my bad, thanks for letting me know.** Let me check it out and fix it. After all, we want to deliver quality ([Element 2 – Make Quality Your Driving Force](#element2MakeQualityYourDrivingForce)).
+
+**How your teammate will decide to communicate to you that you broke something is up to him or her.** <span class="textImportant">How you decide to react is entirely up to you.</span> Whether or not their approach is similar to description from [Element 12 – Don't Blame – Solve Problems](#element12DontBlameSolveProblems), stay calm. The best thing you can do is assess the situation and consider if the problem was really caused by something you did. Discuss it with them (if they are also trying to find a solution instead of somebody to blame), ask where you can find the logs with errors (where applicable), go through your commits to analyze possible error in your code, etc. Act upon it – find the root of the problem and apply a solution. Don't deny it and don't tell your teammate that he should just fix it by himself. Discussion is always better than arguing.
+
+Somtimes it will turn out that it wasn't your fault after all. What to do then? Just contact the person who found the problem and explain it to him/her. Discuss what to do next. You or the other person will probably want to talk to the person who might have introduced the bug. If that's not possible, or you can just fix it easily, then for all its worth you can just fix the problem yourself, or create a new task in your project's issue tracker.
+
+<span class="textImportant">If you break something and somebody points it out to you, do not deny it. Start thinking about how to solve the problem and act upon it.</span> It might also happen that you will be the person who finds out that something you were working on went sideways. If this is the case, try to fix it, and if necessary, notify people who might need to know about the problem, like release manager or a product owner.
+
+<p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
+
+### <a name="element14PutEffortInCodeReviews"></a>Element 14 – Put Effort in Code Reviews
+Not by a coincidence the first Element of this document is [Element 1 – Have Your Code Reviewed](#element1HaveYourCodeReviewed) – it is to emphasise how important the code reviews are in my opinion.
+
+No matter how small a change, it is always good to have somebody take a look at our code. If we can decrease the chance of introducing a bug and improve quality of our code by asking somebody  to review it, then we should let them.
+
+If you are the person doing the code review, then try to make the most of it. There are three good reasons to do code reviews:
+<ul>
+  <li><strong>Reducing the number of bugs</strong> – when you look at somebody else's source code, you have your own perspective, experience, project knowledge, and you aren't biased towards thinking that the code works. A lot of bugs can be prevented from reaching production thanks to that.</li>
+  <li><strong>Improving code</strong> – you might see things that should/could be improved. Sometimes bigger and more important, sometimes smaller, but important as well (<a href="#element3CareAboutSmallThings">Element 3 – Care About Small Things</a>). All fixes done during code review contribute to a better code quality. Just remember to be thorough and don't leave anything behind.</li>
+  <li><strong>Passing knowledge and teaching</strong> – code reviews facilitate flow of both technical and project knowledge. You can really help out your teammates by suggesting how they can improve their code. Code reviews are also a good way to pass project knowledge about important matters that new teammates might not take into account.</li>
+</ul>
+Keep in mind that <span class="textImportant">how you do a code review is also very important</span>. **Code review should be more like a conversation and tutoring rather than trying to show your teammate how badly he or she wrote his/her code.** Code review where you try to prove that the code is bad and you do not provide any constructive feedback will certainly make your teammate think twice before asking for a code review next time – and not just you, but anybody. And this is something that you really do not want. You should want your teammates to never skip code reviews – they are too important to not do them.
+
+Just one more thing that is important – remember that your teammates do not always have to agree with your point of view and you have to take that into account. Provide your feedback, present your point of view and discuss with them potential changes, and consider their arguments.
+
+To sum up, if somebody asks for a code review, either <span class="textImportant">put effort in the code review and try to make the most of it</span>, or tell them that you do not have time to do it. There is no middle ground. Thorough code reviews can really reduce the number of bugs and improve code quality. You can also greatly help teammates who are new on the project by pointing out important matters related to the project you are working on. Just rememeber that your teammates don't always have to agree with you!
+
+<p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
+
+### <a name="element15DocumentYourWorkAndProvideHelpingInformationForTesters"></a>Element 15 – Document Your Work and Provide Helping Information for Testers
+
+Software developers often consider a task to be done when they are happy with the code they have written and pushed to the main branch. Often the task is then assigned to be tested by one of the team's testers. If you have ever done any testing of functionalities introduced by other developers ([Element 6 – Acknowledge Testing as a Part of Your Job](#element6AcknowledgeTestingAsPartOfYourJob)), then you may know just how hard testing can be. Especially when you are supposed to test a task with either one line of cryptic description or with highly technical/business-related description, neither of which make it easy to actually know what and how should be tested.
+
+Tasks with well written description in issue trackers are, unfortunately, not very common. Often they are hastily created, and the task's creator often is not the one who dictates the task's definition.
+
+Consider this: when you are given a task with poor description, do you have any idea how to approach it? Most likely you either have to talk to the author of the task, or find somebody that might have an idea how to do the task. It works the same for the testers – if the tasks are not descriptive, how will they now how to test it? You may either put them in the same situation as you were when you started working on the task, or you might do what the author of the task could have done to help you – provide appropriate description.
+
+In the end, you want your teammate-tester to <span class="textImportant">assure that your task is indeed well done and everything is working correctly</span>, right? You can easily help him or her to do so by providing useful summary of:
+<ul class="listWithMargin">
+  <li><strong>What you have done to complete the task</strong> – this might consist of a technical part that would be useful for other developers who might once stumble upon your task in the future when working on something similar, or investigating some related malfunction. Enclosing some screenshots (where applicable) that present changes in the system is also helpful – a screenshot is worth a thousand words (contemporarily speaking).</li>
+  <li><strong>How to actually test your bug solution or new functionality</strong> that you have developed – this is really, really helpful – anytime I started working on a new project and I provided information for the testers after I have finished a task, they were always appreciative and told me it was helpful. You may also add some test cases that you think are important and should be prioritized.</li>
+</ul>
+**This is neither hard work, nor it is time consuming.** It is, in my opinion, one of those small things that do make a difference ([Element 3 – Care About Small Things](#element3CareAboutSmallThings)). Consider writing information for the testers as a part of your *definition of done*. By *definition of done* I mean steps that you consider necessary to be taken to regard a task as finished.
+
+<span class="textImportant">Whenever you finish a task, spend a few minutes to write down what you have accomplished.</span> If the task will be assigned to a tester, <span class="textImportant">provide useful information in the comment that will help the tester do the testing</span>. It is also a good thing to provide some test cases that you think are the most important to be tried. Making some screenshots, when applicable, also works greatly.
+
+<p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
+
+### <a name="element16ComplyWithProjectsCod"></a>Element 16 – Comply with Project's Code Style Guide
+ 
+Spaces or tabs? I bet you heard that one before. Every developer has a coding style of his or her own. You can write and format your source code in so many ways, and there are different convention you can use. Most of the time, you work with other developers on the project. It is unlikely that everyone will comply with the same conventions and formatting style.
+
+But does style and formatting differences really matter?
+
+They do. They actually matter very much. They are a part of the attention to details from [Element 3 – Care About Small Things](#element3CareAboutSmallThings) and they contribute to the overall quality of the code ([Element 2 – Make Quality Your Driving Force](#element2MakeQualityYourDrivingForce)).
+
+To understand why, consider a source code written by one person. One day, another developer will open the file and add something to it. If he doesn't comply with the file's code style, part of the file will look differently. And now the crucial point in this story – a third developer has to change (or add) something in the file – he/she sees that some parts of the file are written and formatted differently than the other parts. "Which style should I use?" he/she might think. Since two different styles are already being used in that file, why not style and format the new source code in a way that is familiar to the third developer (which will probably differ from the styles of the first two developers). **As time goes by, the file will probably change many times, and it's style and formatting will be a contribution of many developers. As a result, it will not comply with** ***anyone's*** **code style guide.**
+
+Why do we want to keep the source code formatting and style consistent across the project? Because it makes it easier to understand the code and maintain it. When the whole project looks the same, it is easier to get into a different part of the code, analyze, and change it. You get used to a certain way of expressing logic through source code and formatting it.
+
+It might look like not much of a deal, but **it actually is a tough work to keep the style and formatting of the source code in check**. Keep in mind that <span class="textImportant">the less you and other developers care about the code, the faster it will deteriorate, the harder it will be to understand and maintain it. And somebody will, rather sooner than later, have to read the code and maintain it</span> ([Element 9 – Think About Developers Who Will Maintain Your Code](#element9ThinkAboutDevelopersWhoWillMaintainYourCode)).
+
+When you join a new project, you might consider doing the following:
+<ul class="listWithMargin">
+  <li>Ask if there is a style guide – perhaps a list of conventions and guides, and a formatter configuration file, are available on your project's wiki-like site?</li>
+  <li>If there is no such guide, adhere to the style of the file you are changing – keep the source code conventions and formatting the same all over the file.</li>
+  <li>Propose a style guide – ask your new teammates to work together on a code style guide.</li>
+  <li>Refactor if necessary – if a file violates some conventions that are crucial to you, consider refactoring after discussing it with your team.</li>
+  <li>When you create a new file, comply with the style of code seen elsewhere in the project. </li>
+</ul>
+To conclude, <span class="textImportant">comply with the project's style guide to keep the code consistent</span>, whether the style, used conventions, and formatting, are described in some project's document or you just have to check how it is done by looking at the already existing source code.
+
+<p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
+
+### <a name="element17ReadWhatYouWroteBeforeHittingSend"></a>Element 17 – Read What You Wrote Before Hitting "Send"
+
+Whether we like it or not, we spend part of our time sending e-mails, writing documentantion, description of tasks in issue trackers, comments etc. How much time we spend on doing that is up to us, and with some additional effort we can make life easier for all people who will be reading it. It is a part of the [Element 3 – Care About Small Things](#element3CareAboutSmallThings), tough I do not consider it a small thing.
+
+Keep in mind – **whenever you write something, it will be written once, but read many times**. Let's say you write an important e-mail and make three typos and one of the sentences is formed in a way that is hard to understand. If your text will be read by five people, then the typos will be seen fifteen times, five times each, and every person will have to invest some time to understand this one ambiguous sentence. The typos will not look well, and not everybody might understand the sentence in the same/correct way. Now consider that you might have avoided all of that if only you had took a moment to read what you had written.
+
+It is a good habit to go through the document/e-mail/question/comment etc. that you have just written down and correct all the typos you have found and improve the text as much as you can (also check out [Element 10 – Value Time of Other People by Asking the Question the Right Way](#element10ValueTimeOfOtherPeopleByAskingTheQuestionTheRightWay)). **You want it to be easily understood – after all, that's why you have written it in the first place.** This is even more important when you are writing an official e-mail to the client. Make sure it is spotless as you represent both: the company you are working for and yourself.
+
+<span class="textImportant">Before you hit that <em>Send</em> button, read what you have just written.</span> You will most likely find a few typos, wrongly-placed words, and sentences that could be improved to be easier to understand. <span class="textImportant">The better the quality of the text, the easier it will be for the readers to grasp its meaning.</span> No matter what you write, if somebody else will read it, take a few moments to make it as good as possible. You might even thank yourself later for it, cause one of the readers... might be you!
 
 <p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
