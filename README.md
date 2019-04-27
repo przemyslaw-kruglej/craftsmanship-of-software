@@ -356,3 +356,102 @@ It is a good habit to go through the document/e-mail/question/comment etc. that 
 <span class="textImportant">Before you hit that <em>Send</em> button, read what you have just written.</span> You will most likely find a few typos, wrongly-placed words, and sentences that could be improved to be easier to understand. <span class="textImportant">The better the quality of the text, the easier it will be for the readers to grasp its meaning.</span> No matter what you write, if somebody else will read it, take a few moments to make it as good as possible. You might even thank yourself later for it, cause one of the readers... might be you!
 
 <p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
+
+## <a name="elementsOfVersionControl"></a>Elements of Version Control
+
+Last but not least, this chapter is about importance of taking care of your source code repositories.
+
+### <a name="element18CareForTheCodeRepository"></a>Element 18 – Care for the Code Repository
+
+Taking care of a code repository? Is that really something of any importance? Well, it is,
+and by a great deal. It might be considered one of the small things I mentioned in [Element 3 – Care About Small Things](#element3CareAboutSmallThings), but it is neither small nor a detail. It is more of a part of the [Element 2 – Make Quality Your Driving Force](#element2MakeQualityYourDrivingForce).
+
+Source code repository holds history of all changes introduced by developers that used to work on the project, and of those that still do. Once you push your changes to the main branch, your commits can be seen by other developers, and **will be available to all developers who will join the team in the future**.
+
+Consider this – people around you will likely, at some point in time, go through your code. Your name will be next to your commits. Would you rather have them looking at neat, elegant commits with descriptive messages, or disorganized, jumbled commits with "fix" messages? **What and how you commit speaks about yourself** – taking a few minutes to organize your commits and coming up with descriptive messages goes a long way.
+
+Also, think about [Element 9 – Think About Developers Who Will Maintain Your Code](#element9ThinkAboutDevelopersWhoWillMaintainYourCode). Whenever you commit your changes, consider whether the person that will be going through your code will have an easy time understanding why you had changed what you changed (more in [Element 21 – Break Changes Into Commits](#element21BreakChangesIntoCommits)). Here's a short checklist of things you can look at when working with your team's source code repository:
+<ul class="listWithMargin">
+  <li>Neatly organized commits – group related changes together, separate them from refactoring, split changes to show your progress. More about that in <a href="#element21BreakChangesIntoCommits">Element 21 – Break Changes Into Commits</a>.</li>
+  <li>Descriptive commit messages – take a moment to write a message that will explain why certain changes have been done. Avoid "fix" and "TASK-123" messages. More in <a href="#element20WriteDescriptiveCommitMessages">Element 20 – Write Descriptive Commit Messages</a>.</li>
+  <li>Compliance with your team's:
+    <ul class="listWithMargin">
+      <li>branching strategy – part of how different versions of your project's software are handled, and how new features are introduced – it is really important to comply with those,</li>
+      <li>branch naming – teams often have a branch naming convetion – it's good to stick to it,</li>
+      <li>merge strategy – maybe your team likes to keep their change history simple, without too many merge commits, and developers are supposed to rebase often?</li>
+    </ul></li>
+</ul>
+<span class="textImportant">Care for the code repository.</span> Consider it a part of your *definition of done* to neatly organize your commits for any developer that will one day go through your changes. After all, <span class="textImportant">your commits carry changes that are important – otherwise you wouldn't make the them in the first place</span>.
+
+<p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
+
+### <a name="element19MasterYourVersionControlSystem"></a>Element 19 – Master Your Version Control System
+
+Applications with graphical interface, sitting on top of version control systems, are a nice addition to developer's daily work – they can really help out in browsing history of changes, staging files for committing, simplifying merging process etc. However, they will not subsitute powerful commands you can use from the command line, and using graphical interface for many operations is much slower than doing the same from the command line.
+
+I am not saying they shouldn't be used, but I think that <span class="textImportant">firstly one needs to understand the version control system he or she is using</span>, and <span class="textImportant">then try some GUIs and see how they can facilitate using the version control system even further</span>. One thing that using GUIs without learning the ins and outs of a version control system is that you lose your control over what is happening (what commands the GUI is using under the hoods)?
+
+**There are four reasons why it is good to take time to know your version control system:**
+<ol class="listWithMargin">
+  <li><span class="textImportant">Better understanding of what is happening</span> – when you know, to some extent, what is going on under the hoods, you have a better grip of what the version control system is doing for you. You are then able to better use the version control system's commands, as you know how they interact with each other and what you can achieve with them.</li>
+  <li><span class="textImportant">More comfort</span> – from understanding comes comfort. You know what will happen if you use this command, followed by the next, and the next. Whatever you have to do, you are already thinking about the combination of commands to be used. Because you know the commands well, using them feels easy, and, what is even more important, you feel safe using them.</li>
+  <li><span class="textImportant">More control</span> – understanding and comfort bring control. You know what the commands do and you feel comfortable using them. You can do much more from the command line than by using GUI. Combining a few commands allows you to do what you want with your source code.</li>
+  <li><span class="textImportant">Working faster</span> – controlling your source code versions by getting a lot of work done with a few commands is way faster than most of the same actions achieved by clicking in GUI. You will be able to do much more version-controlling in less time.</li>
+</ol>
+<span class="textImportant">Master your version control system to fully utilize its power.</span> You will gain more control over the version control process, understand it better, and feel comfortable doing it. You will also save a lot of time as doing most of the things from the command line is just faster than clicking it in a GUI.
+
+<p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
+
+### <a name="element20WriteDescriptiveCommitMessages"></a>Element 20 – Write Descriptive Commit Messages
+
+Commit messages are the first thing you see when you browse through the history of changes of a repository. Unfortunately, too often do we see the history looking like this:
+
+    fix refactor
+    refactor
+    TASK-789
+    fix
+    TASK-42
+
+Such commit messages are not helpful at all – they don't tell you much. You have to go through the actual changes to get an idea of what was actually changed. What is worse is the fact that **it would only take a moment to think about a commit message that explains the commit's purpose**. It's one of the small things that do matter ([Element 3 – Care About Small Things](#element3CareAboutSmallThings)).
+
+Coming up with a short, yet descriptive, commit message is not an easy feat, but it also doesn't take that much of our time. Consider that <span class="textImportant">you will write the commit's message once, but it will be read many times</span> by other developers – would you rather have them reading "Add displaying recent search entries" or  "TASK-1401" ([Element 9 – Think About Developers Who Will Maintain Your Code](#element9ThinkAboutDevelopersWhoWillMaintainYourCode))?
+
+Commit message should be a summary of the introduced changes. There are many ways to format your commit messages:
+<ul class="listWithMargin">
+  <li>How long should they be?</li>
+  <li>How should they be structured?</li>
+  <li>Should there be additional information provided beyond the initial brief description?</li>
+</ul>
+Different teams have different approaches for writing commit messages – it is one of the things that you can discuss with your teammates to find the solution that works best for you ([Element 16 – Comply with Project's Code Style Guide](#element16ComplyWithProjectsCodeStyleGuide)).
+
+<span class="textImportant">Whenever you commit your changes, take a moment to think about a brief, but descriptive, commit message.</span> **Keep in mind that the commit will probably stay in the repository's history forever, and your name will be next to it.** Descriptive commit messages help you and other developers go through the history of changes and easily understand their purpose.
+
+<p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
+
+### <a name="element21BreakChangesIntoCommits"></a>Element 21 – Break Changes Into Commits
+
+This last Element was a subject of many discussions with my teammates over the years. Many of them did not agree with my point of view. I wonder what you will think about it?
+
+I consider splitting changes into separate commits a good practice (as a part of [Element 3 – Care About Small Things](#element3CareAboutSmallThings)), where each commit, with a descriptive commit message ([Element 20 – Write Descriptive Commit Messages](#element20WriteDescriptiveCommitMessages)), is a chapter of a story. Going through those chapters should allow the reader to understand why and how the application has changed. An important assumption here is that each of the introduced commits does not break the application (i. e. the tests pass).
+
+There are two benefits to this approach:
+<ol class="listWithMargin">
+  <li>Firstly, the person making the code review (<a href="#element1HaveYourCodeReviewed">Element 1 – Have Your Code Reviewed</a>) will have an easier time going through the changes analyzing if they are correct, comply with the project's best practices (<a href="#element16ComplyWithProjectsCodeStyleGuide">Element 16 – Comply with Project's Code Style Guide</a>) and achieve what they were supposed to.</li>
+  <li>Secondly, it will be clearer (<a href="#element9ThinkAboutDevelopersWhoWillMaintainYourCode">Element 9 – Think About Developers Who Will Maintain Your Code</a>) for the people going through your changes in the future to see what, why, and how had changed, since the commits will be describing it part by part.</li>
+</ol>
+There are two good candidates for splitting commits:
+<ul class="listWithMargin">
+  <li>working on a large functionality – you can plan your work, deliver it piece by piece in separate commits with related changes,</li>
+  <li>refactoring – it often encompasses many files and a brings lots of changes – if you can split those changes into separate commits to show consequent iterations of refactoring, you can help your code reviewers analyze the refactor process.</li>
+</ul>
+As I have mentioned, many of my teammates have disagreed with me on this approach. I've often heard that the commits should always be squashed into one commit. Although I disagree with this practice, there are some cons of commits-splitting I propose in this Element that might be worth talking about:
+<ul class="listWithMargin">
+  <li>It takes time to structure your commits this way – it does, but if you agree with me, it is a time worth taking.</li>
+  <li>It is not always easy to have separate commits for related changes – sometimes it might be challenging to separate commits without breaking the tests, or there are just too many changes to be able to split them in a good manner. If that's the case, next time consider how you can approach a task to be able to prepare separate commits with related changes.</li>
+  <li>Changes in next commits can override changes from previous commits – it is often difficult to take everything into account and sometimes we will change our code in newer commits, overriding our work from previous commits – a reviewer going through those first commits might spend time analyzing code that is no longer there. In this situation, you can move the change (where applicable) to one of the previous commits to tackle this problem.</li>
+  <li>There are too many commits – if there are many commits, then if they are neatly orgnized to contain related changes, it shouldn't be a problem in the long run.</li>
+  <li>Looking at all combined changes from some task requires using a command that squashes history log – that's true, but it's a matter of using a command that can do that.</li>
+</ul>
+Whether you agree with me or not, consider this: when you submit your code to code review ([Element 1 – Have Your Code Reviewed](#element1HaveYourCodeReviewed)), <span class="textImportant">will reviewers have an easy time analysing your changes and will they be able to tell whether your code doesn't break anything and comply with the best practices?</span> Perhaps splitting changes into smaller chunks would make it easier for them. Also consider that neatly organized commits might help anyone in the future, who would be going through the history of changes, to understand them.
+
+<p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
