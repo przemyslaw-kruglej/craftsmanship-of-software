@@ -22,6 +22,7 @@
 .main-content h1 {
   font-size: 1.8em;
   color: #0b405a;
+  margin-top: 3em;
 }
 
 .main-content h2 {
@@ -29,11 +30,13 @@
   color: #0b405a;
   font-size: 2.4em;
   font-style: italic;
+  margin-top: 2.5em;
 }
 
 .main-content h3 {
   color: #0b405a;
   font-size: 1.8em;
+  margin-top: 2.5em;
 }
 
 @media screen and (max-width: 42em) {
