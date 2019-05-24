@@ -287,11 +287,14 @@ Not by a coincidence the first Element of this document is [Element 1 – Have Y
 No matter how small a change, it is always good to have somebody take a look at our code. If we can decrease the chance of introducing a bug and improve quality of our code by asking somebody  to review it, then we should let them.
 
 If you are the person doing the code review, then try to make the most of it. There are three good reasons to do code reviews:
+<div>
 <ul>
   <li><strong>Reducing the number of bugs</strong> – when you look at somebody else's source code, you have your own perspective, experience, project knowledge, and you aren't biased towards thinking that the code works. A lot of bugs can be prevented from reaching production thanks to that.</li>
   <li><strong>Improving code</strong> – you might see things that should/could be improved. Sometimes bigger and more important, sometimes smaller, but important as well (<a href="#element3CareAboutSmallThings">Element 3 – Care About Small Things</a>). All fixes done during code review contribute to a better code quality. Just remember to be thorough and don't leave anything behind.</li>
   <li><strong>Passing knowledge and teaching</strong> – code reviews facilitate flow of both technical and project knowledge. You can really help out your teammates by suggesting how they can improve their code. Code reviews are also a good way to pass project knowledge about important matters that new teammates might not take into account.</li>
 </ul>
+</div>
+
 Keep in mind that <span class="textImportant">how you do a code review is also very important</span>. **Code review should be more like a conversation and tutoring rather than trying to show your teammate how badly he or she wrote his/her code.** Code review where you try to prove that the code is bad and you do not provide any constructive feedback will certainly make your teammate think twice before asking for a code review next time – and not just you, but anybody. And this is something that you really do not want. You should want your teammates to never skip code reviews – they are too important to not do them.
 
 Just one more thing that is important – remember that your teammates do not always have to agree with your point of view and you have to take that into account. Provide your feedback, present your point of view and discuss with them potential changes, and consider their arguments.
@@ -309,10 +312,14 @@ Tasks with well written description in issue trackers are, unfortunately, not ve
 Consider this: when you are given a task with poor description, do you have any idea how to approach it? Most likely you either have to talk to the author of the task, or find somebody that might have an idea how to do the task. It works the same for the testers – if the tasks are not descriptive, how will they now how to test it? You may either put them in the same situation as you were when you started working on the task, or you might do what the author of the task could have done to help you – provide appropriate description.
 
 In the end, you want your teammate-tester to <span class="textImportant">assure that your task is indeed well done and everything is working correctly</span>, right? You can easily help him or her to do so by providing useful summary of:
+
+<div>
 <ul class="listWithMargin">
   <li><strong>What you have done to complete the task</strong> – this might consist of a technical part that would be useful for other developers who might once stumble upon your task in the future when working on something similar, or investigating some related malfunction. Enclosing some screenshots (where applicable) that present changes in the system is also helpful – a screenshot is worth a thousand words (contemporarily speaking).</li>
   <li><strong>How to actually test your bug solution or new functionality</strong> that you have developed – this is really, really helpful – anytime I started working on a new project and I provided information for the testers after I have finished a task, they were always appreciative and told me it was helpful. You may also add some test cases that you think are important and should be prioritized.</li>
 </ul>
+</div>
+
 **This is neither hard work, nor it is time consuming.** It is, in my opinion, one of those small things that do make a difference ([Element 3 – Care About Small Things](#element3CareAboutSmallThings)). Consider writing information for the testers as a part of your *definition of done*. By *definition of done* I mean steps that you consider necessary to be taken to regard a task as finished.
 
 <span class="textImportant">Whenever you finish a task, spend a few minutes to write down what you have accomplished.</span> If the task will be assigned to a tester, <span class="textImportant">provide useful information in the comment that will help the tester do the testing</span>. It is also a good thing to provide some test cases that you think are the most important to be tried. Making some screenshots, when applicable, also works greatly.
@@ -371,16 +378,20 @@ Source code repository holds history of all changes introduced by developers tha
 Consider this – people around you will likely, at some point in time, go through your code. Your name will be next to your commits. Would you rather have them looking at neat, elegant commits with descriptive messages, or disorganized, jumbled commits with "fix" messages? **What and how you commit speaks about yourself** – taking a few minutes to organize your commits and coming up with descriptive messages goes a long way.
 
 Also, think about [Element 9 – Think About Developers Who Will Maintain Your Code](#element9ThinkAboutDevelopersWhoWillMaintainYourCode). Whenever you commit your changes, consider whether the person that will be going through your code will have an easy time understanding why you had changed what you changed (more in [Element 21 – Break Changes Into Commits](#element21BreakChangesIntoCommits)). Here's a short checklist of things you can look at when working with your team's source code repository:
+<div>
 <ul class="listWithMargin">
   <li>Neatly organized commits – group related changes together, separate them from refactoring, split changes to show your progress. More about that in <a href="#element21BreakChangesIntoCommits">Element 21 – Break Changes Into Commits</a>.</li>
   <li>Descriptive commit messages – take a moment to write a message that will explain why certain changes have been done. Avoid "fix" and "TASK-123" messages. More in <a href="#element20WriteDescriptiveCommitMessages">Element 20 – Write Descriptive Commit Messages</a>.</li>
   <li>Compliance with your team's:
+    <div>
     <ul class="listWithMargin">
       <li>branching strategy – part of how different versions of your project's software are handled, and how new features are introduced – it is really important to comply with those,</li>
       <li>branch naming – teams often have a branch naming convetion – it's good to stick to it,</li>
       <li>merge strategy – maybe your team likes to keep their change history simple, without too many merge commits, and developers are supposed to rebase often?</li>
-    </ul></li>
+    </ul></div></li>
 </ul>
+</div>
+
 <span class="textImportant">Care for the code repository.</span> Consider it a part of your *definition of done* to neatly organize your commits for any developer that will one day go through your changes. After all, <span class="textImportant">your commits carry changes that are important – otherwise you wouldn't make the them in the first place</span>.
 
 <p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
@@ -417,11 +428,14 @@ Such commit messages are not helpful at all – they don't tell you much. You ha
 Coming up with a short, yet descriptive, commit message is not an easy feat, but it also doesn't take that much of our time. Consider that <span class="textImportant">you will write the commit's message once, but it will be read many times</span> by other developers – would you rather have them reading "Add displaying recent search entries" or  "TASK-1401" ([Element 9 – Think About Developers Who Will Maintain Your Code](#element9ThinkAboutDevelopersWhoWillMaintainYourCode))?
 
 Commit message should be a summary of the introduced changes. There are many ways to format your commit messages:
+<div>
 <ul class="listWithMargin">
   <li>How long should they be?</li>
   <li>How should they be structured?</li>
   <li>Should there be additional information provided beyond the initial brief description?</li>
 </ul>
+</div>
+
 Different teams have different approaches for writing commit messages – it is one of the things that you can discuss with your teammates to find the solution that works best for you ([Element 16 – Comply with Project's Code Style Guide](#element16ComplyWithProjectsCodeStyleGuide)).
 
 <span class="textImportant">Whenever you commit your changes, take a moment to think about a brief, but descriptive, commit message.</span> **Keep in mind that the commit will probably stay in the repository's history forever, and your name will be next to it.** Descriptive commit messages help you and other developers go through the history of changes and easily understand their purpose.
@@ -435,16 +449,23 @@ This last Element was a subject of many discussions with my teammates over the y
 I consider splitting changes into separate commits a good practice (as a part of [Element 3 – Care About Small Things](#element3CareAboutSmallThings)), where each commit, with a descriptive commit message ([Element 20 – Write Descriptive Commit Messages](#element20WriteDescriptiveCommitMessages)), is a chapter of a story. Going through those chapters should allow the reader to understand why and how the application has changed. An important assumption here is that each of the introduced commits does not break the application (i. e. the tests pass).
 
 There are two benefits to this approach:
+<div>
 <ol class="listWithMargin">
   <li>Firstly, the person making the code review (<a href="#element1HaveYourCodeReviewed">Element 1 – Have Your Code Reviewed</a>) will have an easier time going through the changes analyzing if they are correct, comply with the project's best practices (<a href="#element16ComplyWithProjectsCodeStyleGuide">Element 16 – Comply with Project's Code Style Guide</a>) and achieve what they were supposed to.</li>
   <li>Secondly, it will be clearer (<a href="#element9ThinkAboutDevelopersWhoWillMaintainYourCode">Element 9 – Think About Developers Who Will Maintain Your Code</a>) for the people going through your changes in the future to see what, why, and how had changed, since the commits will be describing it part by part.</li>
 </ol>
+</div>
+
 There are two good candidates for splitting commits:
+<div>
 <ul class="listWithMargin">
   <li>working on a large functionality – you can plan your work, deliver it piece by piece in separate commits with related changes,</li>
   <li>refactoring – it often encompasses many files and a brings lots of changes – if you can split those changes into separate commits to show consequent iterations of refactoring, you can help your code reviewers analyze the refactor process.</li>
 </ul>
+</div>
+
 As I have mentioned, many of my teammates have disagreed with me on this approach. I've often heard that the commits should always be squashed into one commit. Although I disagree with this practice, there are some cons of commits-splitting I propose in this Element that might be worth talking about:
+<div>
 <ul class="listWithMargin">
   <li>It takes time to structure your commits this way – it does, but if you agree with me, it is a time worth taking.</li>
   <li>It is not always easy to have separate commits for related changes – sometimes it might be challenging to separate commits without breaking the tests, or there are just too many changes to be able to split them in a good manner. If that's the case, next time consider how you can approach a task to be able to prepare separate commits with related changes.</li>
@@ -452,6 +473,8 @@ As I have mentioned, many of my teammates have disagreed with me on this approac
   <li>There are too many commits – if there are many commits, then if they are neatly orgnized to contain related changes, it shouldn't be a problem in the long run.</li>
   <li>Looking at all combined changes from some task requires using a command that squashes history log – that's true, but it's a matter of using a command that can do that.</li>
 </ul>
+</div>
+
 Whether you agree with me or not, consider this: when you submit your code to code review ([Element 1 – Have Your Code Reviewed](#element1HaveYourCodeReviewed)), <span class="textImportant">will reviewers have an easy time analysing your changes and will they be able to tell whether your code doesn't break anything and comply with the best practices?</span> Perhaps splitting changes into smaller chunks would make it easier for them. Also consider that neatly organized commits might help anyone in the future, who would be going through the history of changes, to understand them.
 
 <p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
