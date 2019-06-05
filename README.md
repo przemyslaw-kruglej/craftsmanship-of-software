@@ -14,6 +14,8 @@ I've divided the document into *Elements*, grouped by topics they relate to. I r
 
 All ideas presented here are just my thoughts. I'm basing them on experience gained on many projects I have been working on over the years – maybe you will agree with me on some of them, and disagree on other. I'd like to know what you think about them, and it would be great if you would share your thoughts – I'll happily receive any e-mails: <przemyslaw.kruglej@gmail.com>.
 
+You can also find me [on my blog](https://przemyslawkruglej.com).
+
 # <a name="listOfElements"></a>Elements of Craftsmanship of Software Development
 
 * [Elements of Quality](#elementsOfQuality)
