@@ -16,6 +16,8 @@ All ideas presented here are just my thoughts. I'm basing them on experience gai
 
 You can also find me [on my blog](https://przemyslawkruglej.com).
 
+_If you speak Polish language, I can teach you programming in Java! I've written a book for people who would like to become software developers – it is available for free on my website: [kursjava.com](https://kursjava.com)._
+
 # <a name="listOfElements"></a>Elements of Craftsmanship of Software Development
 
 * [Elements of Quality](#elementsOfQuality)
