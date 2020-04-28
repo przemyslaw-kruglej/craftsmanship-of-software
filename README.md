@@ -271,7 +271,7 @@ When a problem occurs, <span class="textImportant">instead of blaming – look f
 
 ### <a name="element13IfThingsGoWrongAdmitIt"></a>Element 13 – If Things Go Wrong, Admit It
 
-As mentioned in the previous Element, mistakes happen. From time to time somebody will point it out to you that you have broke something. There are two very different ways to deal with this situation.
+As mentioned in the previous Element, mistakes happen. From time to time somebody will point it out to you that you have broken something. There are two very different ways to deal with this situation.
 
 You may either go in the direction of denial, explaining yourself, blaming another teammate, or, worst of all, telling the person who approached you to just fix it by themselves, wanting to have nothing to do with it. This is not the way to go.
 
