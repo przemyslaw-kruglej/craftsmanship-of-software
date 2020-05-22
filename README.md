@@ -37,7 +37,7 @@ _If you speak Polish language, I can teach you programming in Java! I've written
   * [Element 12 – Don't Blame – Solve Problems](#element12DontBlameSolveProblems)
   * [Element 13 – If Things Go Wrong, Admit It](#element13IfThingsGoWrongAdmitIt)
   * [Element 14 – Put Effort in Code Reviews](#element14PutEffortInCodeReviews)
-  * [Element 15 – Document Your Work and Provide Helping Information for Testers](#element15DocumentYourWorkAndProvideHelpingInformationForTesters)
+  * [Element 15 – Document Your Work and Provide Helpful Information for Testers](#element15DocumentYourWorkAndProvideHelpfulInformationForTesters)
   * [Element 16 – Comply with Project's Code Style Guide](#element16ComplyWithProjectsCodeStyleGuide)
   * [Element 17 – Read What You Wrote Before Hitting "Send"](#element17ReadWhatYouWroteBeforeHittingSend)
 * [Elements of Version Control](#elementsOfVersionControl)
@@ -155,7 +155,7 @@ Whatever the reason, you might be asked to help in testing. I often hear develop
 
 Testing is rooted in the very concept of software development. If there is a chance to support the team by testing a couple of tasks in a time of need, why not do it? A little versatility goes a long way. Don't think about testing like something worse than writing the code, where <span class="textImportant">testing is in fact a part of the development process</span>.
 
-<span class="textImportant">Help your team by doing some testing in a time of need.</span> Nothing wrong about it, and <span class="textImportant">having to test some of the other developer's work might just reveal to you how hard testing can get</span>. You can easily make it simpler for the testers if you provide information about the task you have done, covered by [Element 15 – Document Your Work and Provide Helping Information for Testers](#element15DocumentYourWorkAndProvideHelpingInformationForTesters).
+<span class="textImportant">Help your team by doing some testing in a time of need.</span> Nothing wrong about it, and <span class="textImportant">having to test some of the other developer's work might just reveal to you how hard testing can get</span>. You can easily make it simpler for the testers if you provide information about the task you have done, covered by [Element 15 – Document Your Work and Provide Helpful Information for Testers](#element15DocumentYourWorkAndProvideHelpfulInformationForTesters).
 
 <p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
 
@@ -307,7 +307,7 @@ To sum up, if somebody asks for a code review, either <span class="textImportant
 
 <p class="backToToC"><a href="#listOfElements">&gt; back to the Elements' list</a></p>
 
-### <a name="element15DocumentYourWorkAndProvideHelpingInformationForTesters"></a>Element 15 – Document Your Work and Provide Helping Information for Testers
+### <a name="element15DocumentYourWorkAndProvideHelpfulInformationForTesters"></a>Element 15 – Document Your Work and Provide Helpful Information for Testers
 
 Software developers often consider a task to be done when they are happy with the code they have written and pushed to the main branch. Often the task is then assigned to be tested by one of the team's testers. If you have ever done any testing of functionalities introduced by other developers ([Element 6 – Acknowledge Testing as a Part of Your Job](#element6AcknowledgeTestingAsPartOfYourJob)), then you may know just how hard testing can be. Especially when you are supposed to test a task with either one line of cryptic description or with highly technical/business-related description, neither of which make it easy to actually know what and how should be tested.
 
